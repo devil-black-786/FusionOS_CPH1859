@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
     $(LOCAL_PATH)/misc/custom.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/custom.conf
 
+# zRam
+PRODUCT_PACKAGES += \
+    set_zram.sh
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6771 \
