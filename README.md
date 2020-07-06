@@ -70,7 +70,7 @@ To initialize your local repository using the Pixel Experience trees to build RO
 
 # repo sync
 
- Then to sync up:
+Then to sync up:
 
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
@@ -96,9 +96,15 @@ To initialize your local repository using the Pixel Experience trees to build RO
 
 # repo sync
 
- Then to sync up:
+Then to sync up:
 
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+# ccache and jack
+
+Using 50GB ccache and 15GB RAM (for jack).
+
+    export USE_CCACHE=1; export USE_CCACHE_EXEC=$(command -v ccache); ccache -M 50G; export ANDROID_JACK_VM_ARGS="-Xmx15g -Dfile.encoding=UTF-8 -XX:+TieredCompilation";
 
 ## To Build ##
 ---------------
