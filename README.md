@@ -1,5 +1,35 @@
-# android_device_oppo_CPH1859
+# Pixel Experience and Pixel Experience Plus
 Device Tree for Realme 1. The 3GB variant has codename CPH1861 whereas the 4/6GB variants have codename CPH1859.
+
+**Working**:
+
+1. Boots
+2. RIL(Calls,SMS,Data)
+3. Wi-Fi
+4. Bluetooth
+5. Camera
+6. Audio
+7. Sensors
+8. Flash
+9. Brightness
+10. GPS
+11. Gcam (you need to flash Gapps for it)
+12. Hotspot
+13. USB Tethering
+14. DT2W
+
+**Not working**:
+
+1. Selinux is permissive.
+2. Video codec issues in all Chromium based browser (minimal).
+3. VoLTE
+4. No face Unlock.
+
+## Downloads
+
+https://sourceforge.net/projects/realme1/files/Pixel_Experience/
+
+https://sourceforge.net/projects/realme1/files/Pixel_Experience_Plus/
 
 ### Spec Sheet
 Feature | Specification
@@ -23,3 +53,57 @@ Release Date | May, 2018
 ## Device Picture
 
 ![Realme 1 (17061)](https://i.gadgets360cdn.com/products/large/1532074799_635_Realme_1_db_normal_ndtv.jpg "Realme 1")
+
+
+
+## Getting Started with Pixel Experience ##
+---------------
+
+To get started with ROM compiling, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+
+# repo init
+
+To initialize your local repository using the Pixel Experience trees to build ROM, use a command like this:
+
+    repo init -u https://github.com/PixelExperience/manifest -b ten
+
+# repo sync
+
+ Then to sync up:
+
+    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+## To Build ##
+---------------
+
+Build the Pixel Experience ROM using below command.
+
+    . build/envsetup.sh; lunch aosp_CPH1859-userdebug; mka bacon -j$(nproc --all)
+
+
+## Getting Started with Pixel Experience Plus ##
+---------------
+
+To get started with ROM compiling, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+
+# repo init
+
+To initialize your local repository using the Pixel Experience trees to build ROM, use a command like this:
+
+    repo init -u https://github.com/PixelExperience/manifest -b ten-plus
+
+# repo sync
+
+ Then to sync up:
+
+    repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+## To Build ##
+---------------
+
+Build the Pixel Experience Plus ROM using below command.
+
+    . build/envsetup.sh; lunch aosp_CPH1859-userdebug; mka bacon -j$(nproc --all)
+

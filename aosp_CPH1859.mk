@@ -51,4 +51,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="CPH1859" \
     PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
     
-BUILD_FINGERPRINT := "google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
