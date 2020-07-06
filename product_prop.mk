@@ -185,3 +185,4 @@ ro.mtk_perf_response_time=1
 ro.mtk_cam_stereo_camera_support=1
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 ro.build.keystore.path=/sdcard/.lii/
+
