@@ -52,14 +52,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
     $(LOCAL_PATH)/misc/custom.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/custom.conf
 
-# zRam
-PRODUCT_PACKAGES += \
-    set_zram.sh
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6771 \
-    init.target.rc
+    init.target.rc \
+    init.recovery.mt6771.rc \
+    init.recovery.usb.rc \
+    set_zram.sh
 
 # DRM
 PRODUCT_PACKAGES += \
