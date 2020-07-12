@@ -13,7 +13,7 @@ Device Tree for Realme 1. The 3GB variant has codename CPH1861 whereas the 4/6GB
 8. Flash
 9. Brightness
 10. GPS
-11. Gcam (you need to flash Gapps for it)
+11. Gcam
 12. Hotspot
 13. USB Tethering
 14. DT2W
@@ -22,8 +22,9 @@ Device Tree for Realme 1. The 3GB variant has codename CPH1861 whereas the 4/6GB
 
 1. Selinux is permissive.
 2. Video codec issues in all Chromium based browser (minimal).
-3. VoLTE
+3. VoLTE.
 4. No face Unlock.
+5. Inbuilt Screen Recorder.
 
 ## Downloads
 
@@ -113,3 +114,6 @@ Build the Pixel Experience Plus ROM using below command.
 
     . build/envsetup.sh; lunch aosp_CPH1859-userdebug; mka bacon -j$(nproc --all)
 
+
+**NOTE:**
+Pixel Experience for Realme 1 is discontinued and Pixel Experience Plus will be continued. If you are interested in PE then compiling it using the same DT.
