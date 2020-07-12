@@ -19,11 +19,10 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
 
-
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
    persist.camera.HAL3.enabled=1
-   
+
 # Video Acceleration Enabled And HW debugging
 video.accelerate.hw=1
 debug.sf.hw=1
