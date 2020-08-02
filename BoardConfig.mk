@@ -95,6 +95,10 @@ AB_OTA_UPDATER := false
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
+#Misc
+
+BUILD_BROKEN_DUP_RULES := true
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
