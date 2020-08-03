@@ -58,3 +58,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys"
 
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
+
+
+
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
